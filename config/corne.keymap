@@ -58,56 +58,6 @@
             flavor = "tap-preferred";
         };
 
-        HomeModShiftR: HomeModShiftR {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEMODSHIFTR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-            hold-trigger-on-release;
-        };
-
-        HomeModShiftL: HomeModShiftL {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEMODSHIFTL";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-        };
-
-        HomeModR: HomeModR {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEMODR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-            hold-trigger-on-release;
-            flavor = "tap-preferred";
-        };
-
-        HomeModL: HomeModL {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEMODL";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-            flavor = "tap-preferred";
-        };
-
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
@@ -161,10 +111,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&longPress ESCAPE TAB  &kp Q               &kp W                  &longPress LG(E) E  &longPress LG(R) R  &longPress LC(T) T    &kp Y               &kp U                         &kp I              &kp O                   &kp P              &kp BSPC
-&caps_word             &longPress LC(A) A  &longPress LEFT_ALT S  &hml LCTRL D        &hml LEFT_SHIFT F   &kp G                 &kp H               &HomeModShiftR RIGHT_SHIFT J  &HomeModR RCTRL K  &longPress RIGHT_ALT L  &DBTapDQuote       &kp ENTER
-&lt 4 BACKSLASH        &longPress LC(Z) Z  &longPress LC(X) X     &longPress LC(C) C  &longPress LC(V) V  &kp B                 &longPress LC(N) N  &kp M                         &DBTapSemicolon    &DBTapColon             &DBTapExclamation  &DBTapUnderscore
-                                                                  &mo 1               &lt 2 DEL           &lt 3 SPACE           &lt 5 SPACE         &lt 6 SLASH                   &lt 7 PERCENT
+&longPress ESCAPE TAB  &kp Q               &kp W                  &longPress LG(E) E  &longPress LG(R) R  &longPress LC(T) T    &kp Y               &kp U               &kp I            &kp O                   &kp P              &kp BSPC
+&caps_word             &longPress LC(A) A  &longPress LEFT_ALT S  &hml LCTRL D        &hml LEFT_SHIFT F   &kp G                 &kp H               &hmr RIGHT_SHIFT J  &hmr RCTRL K     &longPress RIGHT_ALT L  &DBTapDQuote       &kp ENTER
+&lt 4 BACKSLASH        &longPress LC(Z) Z  &longPress LC(X) X     &longPress LC(C) C  &longPress LC(V) V  &kp B                 &longPress LC(N) N  &kp M               &DBTapSemicolon  &DBTapColon             &DBTapExclamation  &DBTapUnderscore
+                                                                  &mo 1               &lt 2 DEL           &lt 3 SPACE           &lt 5 SPACE         &lt 6 SLASH         &lt 7 PERCENT
             >;
         };
 
