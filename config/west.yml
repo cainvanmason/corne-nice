@@ -5,7 +5,7 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     # support nice_oled and nice_epaper
-    - name: jaywalker
+    - name: J-Jaywalker
       url-base: https://github.com/J-Jaywalker
   projects:
     - name: zmk
@@ -14,7 +14,7 @@ manifest:
       import: app/west.yml
     # support nice_oled and nice_epaper
     - name: zmk-nice-beetle
-      remote: jaywalker
+      remote: J-Jaywalker
       revision: main
   self:
     path: config
