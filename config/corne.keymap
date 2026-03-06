@@ -191,10 +191,10 @@
         stardew_layer {
             display-name = "STAR";
             bindings = <
-&kp ESCAPE      &kp M   &kp E   &kp W   &kp F   &kp NUMBER_1    &kp Y      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp BSPC
-&kp LEFT_SHIFT  &kp T   &kp A   &kp S   &kp D   &kp NUMBER_2    &mkp LCLK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL  &kp ENTER
-&tog 8          &kp F1  &kp F2  &kp F3  &kp F4  &kp NUMBER_3    &mkp RCLK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans
-                                &trans  &trans  &trans          &mkp LCLK  &mkp RCLK     &kp NUMBER_0
+&kp ESCAPE      &kp M   &kp E   &kp W   &kp F    &kp NUMBER_1    &kp Y      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS       &kp BSPC
+&kp LEFT_SHIFT  &kp T   &kp A   &kp S   &kp D    &kp NUMBER_2    &mkp LCLK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL       &kp ENTER
+&tog 8          &kp F1  &kp F2  &kp F3  &kp F4   &kp NUMBER_3    &mkp RCLK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &msc SCRL_DOWN  &msc SCRL_UP
+                                &trans  &kp TAB  &trans          &mkp LCLK  &mkp RCLK     &kp NUMBER_0
             >;
         };
     };
